@@ -187,6 +187,6 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for the full tex
 ---
 
 <div align="center">
-<sub>Built by <a href="https://github.com/<your-username>">Mr. Root</a></sub>
+<sub>Built by <a href="https://github.com/nostafobic-dev">Mr. Root</a></sub>
 </div>
 
