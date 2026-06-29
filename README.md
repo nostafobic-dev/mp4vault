@@ -2,7 +2,7 @@
 
 # 🔐 VaultForge
 
-**Hide files inside videos. Extract them back out. Encrypt them in between.**
+**Exploit Google Photos Unlimited Storage. Hide files inside videos. Extract them back out—Encrypt them in between.**
 
 A self-contained, interactive Bash CLI for byte-append steganography —
 no dependencies beyond standard Unix tools, runs on Linux, macOS, and Android (Termux).
@@ -43,6 +43,8 @@ back out again. The payload can optionally be encrypted with **AES-256-CBC** bef
 it's hidden, so even if someone finds it, they can't read it without your passphrase.
 
 Everything runs through a guided menu — no flags to memorize, no manual byte-math.
+
+Navigate to [Usage](#usage) and [Usage Case](#usage-case) for more details.
 
 ## How It Works
 
