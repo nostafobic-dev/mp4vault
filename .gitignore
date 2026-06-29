@@ -1,0 +1,13 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Script runtime artifacts (created while VaultForge runs)
+tmp/
+*_enc_*.bin
+extracted_*.bin
