@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 VaultForge
+## Mp4Vault 🔐
 
 **Exploit Google Photos Unlimited Storage. Hide files inside videos. Extract them back out—Encrypt them in between.**
 
@@ -37,7 +37,7 @@ no dependencies beyond standard Unix tools, runs on Linux, macOS, and Android (T
 
 ## Overview
 
-**VaultForge** is an interactive command-line tool that hides any file inside a video
+**Mp4Vault** is an interactive command-line tool that hides any file inside a video
 file by appending it to the end of the video's data, and can later pull that file
 back out again. The payload can optionally be encrypted with **AES-256-CBC** before
 it's hidden, so even if someone finds it, they can't read it without your passphrase.
@@ -73,7 +73,7 @@ VaultForge uses a technique sometimes called **cat-append steganography**:
 - 🖥️ Fully interactive, menu-driven — pick options by number, no CLI flags
 - 📱 Cross-platform: Linux, macOS, and Android via Termux
 - 📦 Auto-detects missing dependencies and offers to install them (apt / pkg / pacman / dnf / brew)
-- ⚡ One-time system-wide install on Termux — launch with just `vforge` from anywhere
+- ⚡ One-time system-wide install on Termux — launch with just `mp4vault` from anywhere
 - 📋 Paginated file browser with human-readable sizes
 - 🛡️ Built-in guards: disk space checks, overwrite confirmation, can't accidentally clobber the carrier video
 
@@ -96,35 +96,35 @@ to install them for you via whichever package manager it finds.
 ### Linux / macOS
 
 ```bash
-git clone https://github.com/<your-username>/vaultforge.git
-cd vaultforge
-chmod +x vaultforge.sh
-./vaultforge.sh
+git clone https://github.com/nostafobic-dev/mp4vault.git
+cd mp4vault
+chmod +x mp4vault.sh
+./mp4vault.sh
 ```
 
 > **macOS note:** the system `bash` is version 3.2, which is too old. Install a
 > newer one and run with it explicitly:
 > ```bash
 > brew install bash
-> /opt/homebrew/bin/bash vaultforge.sh   # Apple Silicon
-> /usr/local/bin/bash vaultforge.sh      # Intel
+> /opt/homebrew/bin/bash mp4vault.sh   # Apple Silicon
+> /usr/local/bin/bash mp4vault.sh      # Intel
 > ```
 
 ### Termux (Android)
 
 ```bash
 pkg install git -y
-git clone https://github.com/<your-username>/vaultforge.git
-cd vaultforge
-chmod +x vaultforge.sh
-./vaultforge.sh
+git clone https://github.com/nostafobic-dev/mp4vault.git
+cd mp4vault
+chmod +x mp4vault.sh
+./mp4vault.sh
 ```
 
 On first run inside Termux, VaultForge will offer to copy itself into
 `$PREFIX/bin` so you can launch it from any folder afterward just by typing:
 
 ```bash
-vforge
+mp4vault
 ```
 
 ## Usage
@@ -149,12 +149,12 @@ Run the script and follow the prompts:
 ## Configuration
 
 Default behavior can be changed by editing the config block near the top of
-`vaultforge.sh`:
+`mp4vault.sh`:
 
 | Variable | Default | Description |
 |----------|---------|--------------|
-| `DEFAULT_SCAN_DIR` | `/sdcard/V-FORGE` | Folder offered as the default place to scan for files |
-| `DEFAULT_OUTPUT_DIR` | `/sdcard/V-FORGE` | Folder offered as the default save location |
+| `DEFAULT_SCAN_DIR` | `/sdcard` | Folder offered as the default place to scan for files |
+| `DEFAULT_OUTPUT_DIR` | `/sdcard` | Folder offered as the default save location |
 | `ENCRYPT_PAYLOAD` | `true` | Offer AES-256 encryption before hiding by default |
 | `SHOW_SIZES` | `true` | Show file sizes next to filenames in lists |
 | `PAGE_SIZE` | `20` | Files shown per page before pagination |
