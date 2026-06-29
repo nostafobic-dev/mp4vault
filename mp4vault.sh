@@ -109,8 +109,7 @@ _startup_check() {
         [file]="file"       [realpath]="coreutils"  [awk]="gawk"
         [openssl]="openssl-tool" [figlet]="figlet"
     )
-    local _required=(file realpath awk openssl)
-    local _recommended=(figlet)
+    local _required=(file realpath awk openssl figlet)
 
     # ── Detect package manager & whether sudo is needed ────────────────
     local _pm="" _pm_upg="" _pm_inst="" _sudo=""
