@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔒 VaultForge
+# 🔐 VaultForge
 
 **Hide files inside videos. Extract them back out. Encrypt them in between.**
 
