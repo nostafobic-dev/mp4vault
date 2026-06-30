@@ -133,6 +133,8 @@ chmod +x mp4vault.sh
 ### Termux (Android)
 
 ```bash
+pkg update -y && pkg upgrade -y
+termux-setup-storage
 pkg install git -y
 git clone https://github.com/nostafobic-dev/mp4vault.git
 cd mp4vault
