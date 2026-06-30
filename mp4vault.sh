@@ -917,7 +917,7 @@ if $ENCRYPT_PAYLOAD && $USE_OPENSSL; then
                 -in "$secret" -out "$TEMP_ENC" 2>/dev/null
         ) &
         _enc_pid=$!
-     if ! show_spinner "$_enc_pid" "Encrypting payload"; then
+     if ! show_spinner "$_enc_pid" "${green}Encrypting payload${reset}"; then
         msg err "Encryption failed."
         exit 1
      fi
