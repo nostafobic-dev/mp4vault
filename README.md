@@ -157,7 +157,7 @@ Run the script and follow the prompts:
 3. Select the file you want to hide (zip it first if it's more than one file)
 4. Optionally set a passphrase to encrypt it
 5. Choose an output location and filename
-6. **Save the Offset Key (and passphrase, if used) that VaultForge prints.**
+6. **Save the Offset Key (and passphrase, if used) that Mp4Vault prints.**
    Without the Offset Key, the hidden file cannot be recovered.
 
 **To extract a file:**
